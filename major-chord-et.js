@@ -30,7 +30,6 @@ const tracks = [
 	{ deltaTime: 120, meta: true, type: 'endOfTrack' },
     ],
     [
-	{ deltaTime: 0, channel: 1, type: 'pitchBend', value: -2048 },
 	{
 	    deltaTime: 0,
 	    running: true,
@@ -74,4 +73,4 @@ const tracks = [
 const song = { header, tracks };
 const output = midi.writeMidi(song);
 const outputBuffer = Buffer.from(output);
-fs.writeFileSync('major-chord.mid', outputBuffer);
+fs.writeFileSync('major-chord-et.mid', outputBuffer);
